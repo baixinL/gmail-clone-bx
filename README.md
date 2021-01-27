@@ -76,4 +76,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 搜索图标：https://material-ui.com/zh/components/material-icons/
 yarn add react-router-dom
+yarn react-hook-form
 
+https://firebase.google.cn/

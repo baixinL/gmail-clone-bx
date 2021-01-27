@@ -3,11 +3,26 @@ import { Button, IconButton } from '@material-ui/core';
 import { AccessTime, Add, Duo, ExpandMoreOutlined, Inbox,LabelImportant,More,NearMe,Note,Person, Phone, Star } from '@material-ui/icons';
 import './Sidebar.css';
 import SidebarOption from '../SidebarOption/SidebarOption'
+import {
+    openSendMessage
+} from "../../features/mailReducer/mailReducer";
+import { useDispatch } from "react-redux";
 
 function Sidebar(props) {
+    const dispatch = useDispatch();
     return (
             <div className="sidebar">
-                <Button startIcon={<Add fontSize="large" />} className="sidebar__compose">Compose</Button>
+                <Button
+                    startIcon={<Add fontSize="large" />}
+                    className="sidebar__compose"
+                    onClick = {
+                        () => {
+                            dispatch(openSendMessage())
+                        }
+                    }
+                >
+                    Compose
+                </Button>
                 <SidebarOption Icon={Inbox} title="Inbox" number={54} selected={true} />
                 <SidebarOption Icon={Star} title="Star" number={54} />
                 <SidebarOption Icon={AccessTime} title="snoozed" number={54} />
