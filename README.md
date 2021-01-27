@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### 查看端口pid:netstat -ano|findstr '3000'
+### 关闭进程xxx[pid]：taskkill /pid xxx
+### use `rcfc` to create a javascript template file  quickly
+###  yarn add @material-ui/core and @material-ui/icons
+
+搜索图标：https://material-ui.com/zh/components/material-icons/
+
