@@ -70,7 +70,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### 查看端口pid:netstat -ano|findstr '3000'
 ### 关闭进程xxx[pid]：taskkill /pid xxx
 ### use `rcfc` to create a javascript template file  quickly
+### use `rcjc` to create a javascript template file  quickly
+### use `rsf` to create a javascript template file  quickly
 ###  yarn add @material-ui/core and @material-ui/icons
 
 搜索图标：https://material-ui.com/zh/components/material-icons/
+yarn add react-router-dom
 

@@ -1,0 +1,30 @@
+.section__option {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0 10px;
+    height: 40px;
+    cursor: pointer;
+    color: #818181;
+}
+
+.section__option .MuiSvgIcon-root {
+    padding: 5px;
+}
+
+.section__option>h4 {
+    flex: 1;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.section__option:hover,
+.section__option:hover>h4,
+.section__active,
+.section__active>h4 {
+    font-weight: 800 !important;
+    background-color: whitesmoke;
+    border-width: 3px !important;
+}

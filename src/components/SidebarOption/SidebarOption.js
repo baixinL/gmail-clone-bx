@@ -1,24 +1,14 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Button } from '@material-ui/core';
+import React from 'react';
+import './SidebarOption.css';
 
-class SidebarOption extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <div className={`sidebar__option ${this.props.selected && 'sidebar__active'} `}>
-                <this.props.Icon />
-                <h3>{this.props.title}</h3>
-                <p>{this.props.number}</p>
+function SidebarOption({Icon, title, number, selected}) {
+    return (
+            <div className={`sidebar__option ${selected && 'sidebar__active'} `}>
+                <Icon />
+                <h3>{title}</h3>
+                <p>{number}</p>
             </div>
         );
-    }
 }
-
-SidebarOption.propTypes = {
-
-};
 
 export default SidebarOption;

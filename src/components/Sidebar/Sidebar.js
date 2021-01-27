@@ -1,17 +1,11 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { Button, IconButton } from '@material-ui/core';
 import { AccessTime, Add, Duo, ExpandMoreOutlined, Inbox,LabelImportant,More,NearMe,Note,Person, Phone, Star } from '@material-ui/icons';
 import './Sidebar.css';
 import SidebarOption from '../SidebarOption/SidebarOption'
 
-class Sidebar extends Component {
-    constructor(props) {
-        super(props);
-
-    }
-    render() {
-        return (
+function Sidebar(props) {
+    return (
             <div className="sidebar">
                 <Button startIcon={<Add fontSize="large" />} className="sidebar__compose">Compose</Button>
                 <SidebarOption Icon={Inbox} title="Inbox" number={54} selected={true} />
@@ -36,11 +30,6 @@ class Sidebar extends Component {
                 </div>
             </div>
         );
-    }
 }
-
-Sidebar.propTypes = {
-
-};
 
 export default Sidebar;
